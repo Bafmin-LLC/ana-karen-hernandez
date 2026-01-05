@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { Instagram, Twitter, Mail } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 
 const socialLinks = [
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@ana.art", label: "Email" },
+  { icon: Instagram, href: "https://www.instagram.com/ana.rndom.art", label: "Instagram" },
+  { icon: Mail, href: "mailto:Anakahernandez26@gmail.com", label: "Email" },
 ];
 
 export function Footer() {
