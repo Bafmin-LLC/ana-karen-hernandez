@@ -20,7 +20,7 @@ export function Footer() {
               ANA
             </Link>
             <p className="text-sm text-muted-foreground mt-2">
-              © {new Date().getFullYear()} Ana. All rights reserved.
+              © {new Date().getFullYear()} Anaka Hernandez. All rights reserved.
             </p>
           </div>
 
