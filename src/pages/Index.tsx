@@ -3,12 +3,21 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 
+// Import artwork images
+import art01 from "@/assets/artwork/art-01.jpg";
+import art02 from "@/assets/artwork/art-02.jpg";
+import art03 from "@/assets/artwork/art-03.jpg";
+import art04 from "@/assets/artwork/art-04.jpg";
+import art05 from "@/assets/artwork/art-05.jpg";
+import art06 from "@/assets/artwork/art-06.jpg";
+import anaPhoto from "@/assets/ana-karen-hernandez.png";
+
 // Featured artworks for the home page preview
 const featuredWorks = [
-  { id: "1", title: "Cosmic Wanderer", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=800&fit=crop" },
-  { id: "2", title: "Neon Dreams", image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop" },
-  { id: "3", title: "Forest Spirit", image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&h=900&fit=crop" },
-  { id: "4", title: "City Lights", image: "https://images.unsplash.com/photo-1549490349-8643362247b5?w=800&h=500&fit=crop" },
+  { id: "1", title: "Artwork 1", image: art01 },
+  { id: "2", title: "Artwork 2", image: art02 },
+  { id: "3", title: "Artwork 3", image: art03 },
+  { id: "4", title: "Artwork 4", image: art04 },
 ];
 
 const Index = () => {
@@ -125,8 +134,8 @@ const Index = () => {
             <div className="relative animate-fade-in">
               <div className="aspect-square rounded-2xl overflow-hidden bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
-                  alt="Ana - Digital Artist"
+                  src={anaPhoto}
+                  alt="Ana Karen Hernandez - Digital Artist"
                   className="w-full h-full object-cover"
                 />
               </div>
