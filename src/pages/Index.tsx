@@ -149,11 +149,8 @@ const Index = () => {
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
                 About <span className="text-gradient-secondary">Me</span>
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm a digital artist passionate about bringing ideas to life through vibrant colors and expressive characters. With a background in illustration and animation, I create art that resonates with emotion and tells compelling stories.
-              </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                My work spans character design, concept art, and digital illustrations for games, books, and personal projects.
+                I am a digital artist with a strong focus on character creation. I enjoy developing expressive characters through design, emotion, and storytelling. I am eager to continue growing my skills and contributing creatively within studio projects.
               </p>
               <Button asChild className="bg-gradient-secondary hover:opacity-90 text-secondary-foreground glow-secondary">
                 <Link to="/about">
