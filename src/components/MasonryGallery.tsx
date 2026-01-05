@@ -3,6 +3,18 @@ import { cn } from "@/lib/utils";
 import { FilterBar } from "./FilterBar";
 import { Lightbox } from "./Lightbox";
 
+// Import artwork images
+import art01 from "@/assets/artwork/art-01.jpg";
+import art02 from "@/assets/artwork/art-02.jpg";
+import art03 from "@/assets/artwork/art-03.jpg";
+import art04 from "@/assets/artwork/art-04.jpg";
+import art05 from "@/assets/artwork/art-05.jpg";
+import art06 from "@/assets/artwork/art-06.jpg";
+import art07 from "@/assets/artwork/art-07.jpg";
+import art08 from "@/assets/artwork/art-08.jpg";
+import art09 from "@/assets/artwork/art-09.jpg";
+import art10 from "@/assets/artwork/art-10.jpg";
+
 export interface Artwork {
   id: string;
   title: string;
@@ -11,16 +23,18 @@ export interface Artwork {
   image: string;
 }
 
-// Placeholder artworks - replace with uploaded images
+// Ana's artwork collection
 const placeholderArtworks: Artwork[] = [
-  { id: "1", title: "Cosmic Wanderer", category: "Character Design", year: 2024, image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=800&fit=crop" },
-  { id: "2", title: "Neon Dreams", category: "Digital Illustration", year: 2024, image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop" },
-  { id: "3", title: "Forest Spirit", category: "Character Design", year: 2023, image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&h=900&fit=crop" },
-  { id: "4", title: "City Lights", category: "Digital Illustration", year: 2024, image: "https://images.unsplash.com/photo-1549490349-8643362247b5?w=800&h=500&fit=crop" },
-  { id: "5", title: "Ocean Guardian", category: "Character Design", year: 2023, image: "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=600&h=750&fit=crop" },
-  { id: "6", title: "Abstract Emotions", category: "Digital Illustration", year: 2023, image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=700&h=700&fit=crop" },
-  { id: "7", title: "Cyber Punk", category: "Character Design", year: 2024, image: "https://images.unsplash.com/photo-1563089145-599997674d42?w=600&h=850&fit=crop" },
-  { id: "8", title: "Sunset Valley", category: "Digital Illustration", year: 2022, image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&h=600&fit=crop" },
+  { id: "1", title: "Daydreamer", category: "Character Design", year: 2024, image: art01 },
+  { id: "2", title: "Brooding Soul", category: "Character Design", year: 2024, image: art02 },
+  { id: "3", title: "Sparkle", category: "Character Design", year: 2024, image: art03 },
+  { id: "4", title: "Skater Boy", category: "Character Design", year: 2023, image: art04 },
+  { id: "5", title: "Pink Fringe", category: "Character Design", year: 2024, image: art05 },
+  { id: "6", title: "Golden Hour", category: "Character Design", year: 2023, image: art06 },
+  { id: "7", title: "City Nights", category: "Digital Illustration", year: 2024, image: art07 },
+  { id: "8", title: "Falling", category: "Digital Illustration", year: 2024, image: art08 },
+  { id: "9", title: "Violet Glow", category: "Character Design", year: 2023, image: art09 },
+  { id: "10", title: "Beach Day", category: "Digital Illustration", year: 2024, image: art10 },
 ];
 
 interface MasonryGalleryProps {
