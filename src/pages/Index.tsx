@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-import { ArtworkMarquee } from "@/components/ArtworkMarquee";
+import { HeroShowcase } from "@/components/HeroShowcase";
 
 // Import artwork images
 import art01 from "@/assets/artwork/art-01.jpg";
@@ -23,7 +23,7 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden py-12">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10 pointer-events-none" />
         
@@ -31,46 +31,47 @@ const Index = () => {
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
         
-        <div className="container mx-auto px-6 relative z-10 mb-12">
-          <div className="max-w-4xl">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-border/50 mb-8 animate-fade-in">
-              <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm text-muted-foreground">Digital Illustration & Character Design</span>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Content */}
+            <div>
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-border/50 mb-8 animate-fade-in">
+                <Sparkles className="w-4 h-4 text-primary" />
+                <span className="text-sm text-muted-foreground">Digital Illustration & Character Design</span>
+              </div>
+
+              {/* Main Title */}
+              <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up">
+                <span className="text-foreground">Character creation and </span>
+                <span className="text-gradient-primary">digital illustration</span>
+              </h1>
+
+              {/* Subtitle */}
+              <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+                Digital artist focused on character design. Original characters, portraits, and clean sheets for story-ready worlds.
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+                <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90 font-semibold px-8">
+                  <Link to="/work">
+                    View work
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="border-border hover:bg-muted/50">
+                  <Link to="/contact">
+                    Contact for commissions
+                  </Link>
+                </Button>
+              </div>
             </div>
 
-            {/* Main Title */}
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 animate-fade-in-up">
-              <span className="text-foreground">Hi, I'm </span>
-              <span className="text-gradient-primary">Ana</span>
-            </h1>
-
-            {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-10 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-              I create vibrant digital worlds and memorable characters that tell stories and spark imagination.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <Button asChild size="lg" className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold px-8 glow-primary">
-                <Link to="/work">
-                  View My Work
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="border-border/50 hover:bg-muted/50">
-                <Link to="/contact">
-                  Get in Touch
-                </Link>
-              </Button>
+            {/* Right: Auto-scrolling artwork showcase */}
+            <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
+              <HeroShowcase />
             </div>
           </div>
-        </div>
-
-        {/* Scrolling Artwork Preview */}
-        <div className="relative z-10 space-y-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          <ArtworkMarquee direction="left" />
-          <ArtworkMarquee direction="right" />
         </div>
       </section>
 
