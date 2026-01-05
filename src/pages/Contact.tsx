@@ -107,35 +107,32 @@ const Contact = () => {
                 </div>
               </a>
             ))}
-          </div>
 
-          {/* Commission Status */}
-          <div className="max-w-4xl mx-auto mt-12 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <div className="p-8 rounded-2xl bg-gradient-to-br from-accent/20 to-coral/10 border border-accent/30">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                <div className="flex items-center gap-4">
-                  <div className="relative">
-                    <div className="w-4 h-4 rounded-full bg-lime animate-pulse" />
-                    <div className="absolute inset-0 w-4 h-4 rounded-full bg-lime animate-ping" />
-                  </div>
-                  <div>
-                    <h3 className="font-display text-xl font-bold text-foreground">
-                      Commissions Open!
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Currently accepting new projects and collaborations
-                    </p>
-                  </div>
+            {/* Commission Status */}
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-accent/20 to-coral/10 border border-accent/30 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="relative">
+                  <div className="w-4 h-4 rounded-full bg-lime animate-pulse" />
+                  <div className="absolute inset-0 w-4 h-4 rounded-full bg-lime animate-ping" />
                 </div>
-                <Button 
-                  onClick={copyEmail}
-                  variant="outline" 
-                  className="border-accent/50 text-accent hover:bg-accent/20"
-                >
-                  <Mail className="w-4 h-4 mr-2" />
-                  Send Inquiry
-                </Button>
+                <div>
+                  <h3 className="font-display text-lg font-bold text-foreground">
+                    Commissions Open!
+                  </h3>
+                  <p className="text-muted-foreground text-sm">
+                    Accepting new projects
+                  </p>
+                </div>
               </div>
+              <Button 
+                onClick={copyEmail}
+                variant="outline" 
+                size="sm"
+                className="w-full border-accent/50 text-accent hover:bg-accent/20"
+              >
+                <Mail className="w-4 h-4 mr-2" />
+                Send Inquiry
+              </Button>
             </div>
           </div>
         </div>
