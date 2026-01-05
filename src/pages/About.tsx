@@ -2,7 +2,7 @@ import { Layout } from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { ArrowRight, Palette, Sparkles, Zap, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import anaPhoto from "@/assets/ana-karen-hernandez.png";
 const skills = [
   { icon: Palette, label: "Digital Illustration", color: "text-primary" },
   { icon: Sparkles, label: "Character Design", color: "text-secondary" },
@@ -29,8 +29,8 @@ const About = () => {
             <div className="relative order-2 lg:order-1 animate-fade-in">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop"
-                  alt="Ana - Digital Artist"
+                  src={anaPhoto}
+                  alt="Ana Karen Hernandez - Digital Artist"
                   className="w-full h-full object-cover"
                 />
               </div>
