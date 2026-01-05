@@ -116,7 +116,13 @@ const Contact = () => {
             ))}
 
             {/* Commission Status */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-accent/20 to-coral/10 border border-accent/30 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+            <a
+              href="https://vgen.co/anarndom"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-6 rounded-2xl bg-gradient-to-br from-accent/20 to-coral/10 border border-accent/30 hover:border-accent/50 transition-all hover:-translate-y-1 animate-fade-in-up"
+              style={{ animationDelay: "0.25s" }}
+            >
               <div className="flex items-center gap-4 mb-4">
                 <div className="relative">
                   <div className="w-4 h-4 rounded-full bg-lime animate-pulse" />
@@ -131,16 +137,11 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              <Button 
-                onClick={copyEmail}
-                variant="outline" 
-                size="sm"
-                className="w-full border-accent/50 text-accent hover:bg-accent/20"
-              >
-                <Mail className="w-4 h-4 mr-2" />
-                Send Inquiry
-              </Button>
-            </div>
+              <div className="flex items-center justify-between px-4 py-2 rounded-xl bg-accent/10 border border-accent/30">
+                <span className="text-sm font-medium text-accent">Book on VGen</span>
+                <ExternalLink className="w-4 h-4 text-accent group-hover:translate-x-1 transition-transform" />
+              </div>
+            </a>
           </div>
         </div>
       </section>
