@@ -52,10 +52,7 @@ const About = () => {
               </h1>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p className="animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-                  I am a digital artist with a strong focus on character creation. I enjoy developing expressive characters through design, emotion, and storytelling.
-                </p>
-                <p className="animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-                  I am eager to continue growing my skills and contributing creatively within studio projects.
+                  I am a digital artist with a strong focus on character creation. I enjoy developing expressive characters through design, emotion, and storytelling. I am eager to continue growing my skills and contributing creatively within studio projects.
                 </p>
               </div>
             </div>
