@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Layout } from "@/components/Layout";
-import { Mail, Instagram, Twitter, Copy, Check, ExternalLink } from "lucide-react";
+import { Mail, Instagram, Copy, Check, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 
@@ -8,23 +8,16 @@ const socialLinks = [
   { 
     icon: Instagram, 
     label: "Instagram", 
-    handle: "@ana.art",
-    href: "https://instagram.com/ana.art",
+    handle: "@ana.rndom.art",
+    href: "https://www.instagram.com/ana.rndom.art",
     color: "hover:text-pink-500"
-  },
-  { 
-    icon: Twitter, 
-    label: "Twitter / X", 
-    handle: "@ana_creates",
-    href: "https://twitter.com/ana_creates",
-    color: "hover:text-sky-400"
   },
 ];
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
-  const email = "hello@ana.art";
+  const email = "Anakahernandez26@gmail.com";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
