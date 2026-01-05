@@ -52,13 +52,10 @@ const About = () => {
               </h1>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p className="animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-                  Hello! I'm Ana, a digital artist based in the creative corners of the internet. I specialize in bringing vibrant characters and worlds to life through digital illustration and design.
+                  I am a digital artist with a strong focus on character creation. I enjoy developing expressive characters through design, emotion, and storytelling.
                 </p>
                 <p className="animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-                  My journey began with a pencil and sketchbook, eventually evolving into the digital realm where I discovered the endless possibilities of creating art. I'm particularly drawn to character design, finding joy in crafting personalities that resonate with viewers.
-                </p>
-                <p className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-                  When I'm not creating art, you'll find me exploring new techniques, playing video games for inspiration, or teaching workshops to aspiring artists.
+                  I am eager to continue growing my skills and contributing creatively within studio projects.
                 </p>
               </div>
             </div>
