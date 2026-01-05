@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { Instagram, Mail } from "lucide-react";
+import { Instagram, Mail, Palette } from "lucide-react";
 
 const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/ana.rndom.art", label: "Instagram" },
+  { icon: Palette, href: "https://vgen.co/anarndom", label: "VGen" },
   { icon: Mail, href: "mailto:Anakahernandez26@gmail.com", label: "Email" },
 ];
 

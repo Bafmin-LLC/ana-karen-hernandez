@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Layout } from "@/components/Layout";
-import { Mail, Instagram, Copy, Check, ExternalLink } from "lucide-react";
+import { Mail, Instagram, Copy, Check, ExternalLink, Palette } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 
@@ -11,6 +11,13 @@ const socialLinks = [
     handle: "@ana.rndom.art",
     href: "https://www.instagram.com/ana.rndom.art",
     color: "hover:text-pink-500"
+  },
+  { 
+    icon: Palette, 
+    label: "VGen", 
+    handle: "anarndom",
+    href: "https://vgen.co/anarndom",
+    color: "hover:text-purple-500"
   },
 ];
 
