@@ -37,12 +37,6 @@ const About = () => {
               {/* Decorative elements */}
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-primary rounded-full blur-2xl opacity-40" />
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-secondary rounded-full blur-2xl opacity-40" />
-              <div className="absolute top-1/2 -right-8 transform -translate-y-1/2">
-                <div className="bg-card/90 backdrop-blur-sm border border-border rounded-xl p-4 shadow-lg">
-                  <p className="text-2xl font-display font-bold text-primary">5+</p>
-                  <p className="text-sm text-muted-foreground">Years of<br/>Experience</p>
-                </div>
-              </div>
             </div>
 
             {/* Content */}
