@@ -14,6 +14,9 @@ import art07 from "@/assets/artwork/art-07.jpg";
 import art08 from "@/assets/artwork/art-08.jpg";
 import art09 from "@/assets/artwork/art-09.jpg";
 import art10 from "@/assets/artwork/art-10.jpg";
+import art11 from "@/assets/artwork/art-11.jpg";
+import art12 from "@/assets/artwork/art-12.jpg";
+import art13 from "@/assets/artwork/art-13.jpg";
 
 export interface Artwork {
   id: string;
@@ -35,6 +38,9 @@ const placeholderArtworks: Artwork[] = [
   { id: "8", title: "Falling", category: "Digital Illustration", year: 2024, image: art08 },
   { id: "9", title: "Violet Glow", category: "Character Design", year: 2023, image: art09 },
   { id: "10", title: "Beach Day", category: "Digital Illustration", year: 2024, image: art10 },
+  { id: "11", title: "School Boy", category: "Character Design", year: 2024, image: art11 },
+  { id: "12", title: "Turnaround Sheet", category: "Character Design", year: 2024, image: art12 },
+  { id: "13", title: "Firefly Magic", category: "Digital Illustration", year: 2024, image: art13 },
 ];
 
 interface MasonryGalleryProps {
