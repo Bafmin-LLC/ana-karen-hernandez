@@ -2,14 +2,13 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
+import { ArtworkMarquee } from "@/components/ArtworkMarquee";
 
 // Import artwork images
 import art01 from "@/assets/artwork/art-01.jpg";
 import art02 from "@/assets/artwork/art-02.jpg";
 import art03 from "@/assets/artwork/art-03.jpg";
 import art04 from "@/assets/artwork/art-04.jpg";
-import art05 from "@/assets/artwork/art-05.jpg";
-import art06 from "@/assets/artwork/art-06.jpg";
 import anaPhoto from "@/assets/ana-karen-hernandez.png";
 
 // Featured artworks for the home page preview
@@ -24,7 +23,7 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10 pointer-events-none" />
         
@@ -32,7 +31,7 @@ const Index = () => {
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
         
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-6 relative z-10 mb-12">
           <div className="max-w-4xl">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-border/50 mb-8 animate-fade-in">
@@ -66,6 +65,12 @@ const Index = () => {
               </Button>
             </div>
           </div>
+        </div>
+
+        {/* Scrolling Artwork Preview */}
+        <div className="relative z-10 space-y-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <ArtworkMarquee direction="left" />
+          <ArtworkMarquee direction="right" />
         </div>
       </section>
 
